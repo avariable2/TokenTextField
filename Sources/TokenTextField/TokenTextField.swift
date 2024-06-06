@@ -9,6 +9,12 @@ public struct TokenTextField: View {
     @State public var horizontalSpacingBetweenItem: CGFloat = 10
     @State public var verticalSpacingBetweenItem: CGFloat = 15
     
+    public init(tags: Binding<[TokenModel]>, horizontalSpacingBetweenItem: CGFloat = 10, verticalSpacingBetweenItem: CGFloat = 15) {
+        self._tags = tags
+        self._horizontalSpacingBetweenItem = State(initialValue: horizontalSpacingBetweenItem)
+        self._verticalSpacingBetweenItem = State(initialValue: verticalSpacingBetweenItem)
+    }
+    
     public var body: some View {
         
         TokenLayout(alignment: .leading, horizontalSpacingBetweenItem: horizontalSpacingBetweenItem, verticalSpacingBetweenItem: verticalSpacingBetweenItem) {
