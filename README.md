@@ -1,50 +1,21 @@
 # TokenTextField
 
-TokenTextField est un composant SwiftUI réutilisable pour la gestion des champs de texte avec des jetons (tags).
+A reusable SwiftUI component for editable token / tag-style text inputs.
 
-## Installation
+## Integration
 
-### Swift Package Manager
+Clone the repository or, when a valid Swift Package Manager package manifest is available, add the package from:
 
-Pour ajouter TokenTextField à votre projet, utilisez le Swift Package Manager :
-
-1. Dans Xcode, allez dans `File > Swift Packages > Add Package Dependency`.
-2. Entrez l'URL du dépôt GitHub : `https://github.com/username/TokenTextField.git`
-3. Choisissez la version que vous souhaitez utiliser.
-4. Cliquez sur `Next`, puis sur `Finish`.
-
-## Utilisation
-
-Importez TokenTextField dans votre fichier Swift :
-
-```
-swift
-import SwiftUI
-import TokenTextField
-
-struct ContentView: View {
-    @State private var tags: [TokenModel] = []
-
-    var body: some View {
-        VStack {
-            TokenTextField(tags: $tags)
-                .padding()
-            // Autres vues
-        }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+```text
+https://github.com/avariable2/TokenTextField
 ```
 
-## Contributions
+Before integrating, verify the current module structure and compatibility with your Xcode and Swift versions. This README does not claim a published package release.
 
-Les contributions sont les bienvenues ! Veuillez créer une issue ou soumettre une pull request.
+## Typical use
 
-## Licence
+Tags, keyword input and compact multi-value text forms in native SwiftUI apps.
 
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+## Security
+
+Do not commit user-entered data, private documents, environment files or credentials in demo code.
